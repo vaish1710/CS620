@@ -6,19 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My GitHub Portfolio</title>
     <style>
-        /* Apply a background image */
+        /* Apply a background image with an animated gradient overlay */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-image: url('https://raw.githubusercontent.com/vaish1710/CS620/main/102393310-07478b80-3f8d-11eb-84eb-392d555ebd29.webp'); /* Background image from your GitHub */
-            background-size: cover; /* Make sure image covers the entire viewport */
+            background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            min-height: 100vh;
+            height: 100vh;
             color: white;
             display: flex;
             flex-direction: column;
+            justify-content: space-between;
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Add a subtle animated gradient overlay */
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.4));
+            background-size: 400% 400%;
+            animation: gradientAnimation 15s ease infinite;
+            z-index: 1; /* Overlay is behind the content */
+        }
+
+        /* Gradient animation */
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
         }
 
         /* Center the content */
@@ -28,11 +52,14 @@
             justify-content: center;
             align-items: center;
             text-align: center;
+            z-index: 2; /* Content stays on top */
         }
 
         /* Style for the portfolio content */
         .portfolio {
             padding: 20px;
+            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
+            border-radius: 10px;
         }
 
         h1 {
@@ -42,7 +69,7 @@
 
         p {
             font-size: 1.2em;
-            color: white; /* Ensure text is visible against the background */
+            color: white;
         }
 
         a {
@@ -79,7 +106,8 @@
             align-items: center;
             padding: 20px;
             gap: 20px;
-            background-color: rgba(0, 0, 0, 0.7); /* Darken the footer area for better readability */
+            background-color: rgba(0, 0, 0, 0.7); /* Darken the footer for readability */
+            z-index: 2; /* Ensure it's above the animation */
         }
 
         .icon img {
