@@ -11,7 +11,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('https://raw.githubusercontent.com/vaish1710/CS620/main/102393310-07478b80-3f8d-11eb-84eb-392d555ebd29.webp'); /* Background image from your GitHub */
+            background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fdev.to%2Fgithub%2Fthe-github-community-roundup-20240209-2pdj&psig=AOvVaw2AMhuizsTTpFTYK5G8c1aW&ust=1726605735115000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOiI4-KpyIgDFQAAAAAdAAAAABAE'); /* Background image from your GitHub */
             background-size: cover; /* Make sure image covers the entire viewport */
             background-position: center;
             background-repeat: no-repeat;
