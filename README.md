@@ -11,7 +11,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Fdev.to%2Fgithub%2Fthe-github-community-roundup-20240209-2pdj&psig=AOvVaw2AMhuizsTTpFTYK5G8c1aW&ust=1726605735115000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCOiI4-KpyIgDFQAAAAAdAAAAABAE'); /* Background image from your GitHub */
+            background-image: url('"F:\sublime\wy2o6nicut63th7nn6dg.jpg"'); /* Background image from your GitHub */
             background-size: cover; /* Make sure image covers the entire viewport */
             background-position: center;
             background-repeat: no-repeat;
