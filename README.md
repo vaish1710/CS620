@@ -1,3 +1,5 @@
+
+ <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,7 +13,7 @@
             margin: 0;
             padding: 0;
             background-image: url('https://raw.githubusercontent.com/vaish1710/CS620/main/102393310-07478b80-3f8d-11eb-84eb-392d555ebd29.webp'); /* Background image from your GitHub */
-            background-size: cover;
+            background-size: cover; /* Make sure image covers the entire viewport */
             background-position: center;
             background-repeat: no-repeat;
             height: 100vh;
@@ -25,18 +27,11 @@
             align-items: center;
             height: 100vh;
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.6); /* Darken the background for readability */
-            position: relative;
         }
 
         /* Style for the portfolio content */
         .portfolio {
             padding: 20px;
-            border-radius: 15px;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
         }
 
         h1 {
@@ -46,6 +41,7 @@
 
         p {
             font-size: 1.2em;
+            color: white; /* Ensure text is visible against the background */
         }
 
         a {
@@ -97,16 +93,14 @@
         <div class="portfolio">
             <h1>Vaishnavi Paruchuri</h1>
             <p>Data Science and Analytics Master's Student</p>
-            <p>I hold an undergraduate degree in Computer Science and am currently pursuing a master's in Data Science and Analytics. My primary interest lies in uncovering valuable outcomes from data, driving insights that lead to informed decisions and innovation. Welcome to my GitHub portfolio, where I showcase my work, projects, and collaborations.</p>
-            <!--<p>Welcome to my GitHub portfolio. Here you can find my projects, collaborations, and more!</p>-->
+            <p>I hold an undergraduate degree in Computer Science and am currently pursuing a master's in Data Science and Analytics. My primary interest lies in uncovering valuable outcomes from data, driving insights that lead to informed decisions and innovation.</p>
             <p>Check out my repositories on <a href="https://github.com/vaish1710" target="_blank">GitHub</a>.</p>
         </div>
 
         <!-- Align buttons and icon at the bottom -->
         <div class="bottom-buttons">
             <!-- Download Resume Button -->
-            <a href="https://raw.githubusercontent.com/vaish1710/CS620/main/Resume.pdf" class="btn" download="Vaishnavi_Resume.pdf">
-            Download Resume</a>
+            <a href="https://raw.githubusercontent.com/vaish1710/CS620/main/Resume.pdf" class="btn" download="Vaishnavi_Resume.pdf">Download Resume</a>
 
             <!-- Email Icon Button -->
             <div class="icon">
@@ -118,3 +112,4 @@
     </div>
 </body>
 </html>
+
