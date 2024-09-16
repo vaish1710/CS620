@@ -6,96 +6,107 @@
     <title>My GitHub Portfolio</title>
     <style>
         /* Apply a background image */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-image: url('https://raw.githubusercontent.com/vaish1710/CS620/main/102393310-07478b80-3f8d-11eb-84eb-392d555ebd29.webp');
-            background-size: cover;
-            background-position: center;
-            background-repeat: no-repeat;
-            height: 100vh;
-            color: white;
-        }
+       /* Apply a background image */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('https://raw.githubusercontent.com/vaish1710/CS620/main/102393310-07478b80-3f8d-11eb-84eb-392d555ebd29.webp');
+    background-size: cover; /* Ensures the image covers the entire viewport */
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh; /* Ensures the body takes the full viewport height */
+    color: white;
+}
 
-        /* Center the content */
- .container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.6); /* Darken the background for readability */
-            position: relative;
-        }
+/* Center the content */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.6); /* Darken the background for readability */
+    position: relative;
+}
 
-        /* Style for the portfolio content */
- .portfolio {
-            padding: 20px;
-            border-radius: 15px;
-            background-color: rgba(0, 0, 0, 0); /* Removed shadow, kept a light background */
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
+/* Style for the portfolio content */
+.portfolio {
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0); /* Transparent background */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: none; /* Ensure no box shadow */
+}
 
+/* Style for the name */
 h1 {
-            font-size: 3.5em;
-            margin: 0;
-            font-weight: bold;
-        }
+    font-size: 4em; /* Increase font size */
+    margin: 0;
+    font-weight: bold;
+    text-decoration: none; /* Ensure no underline */
+}
 
- p {
-            font-size: 1.2em;
-            margin: 15px 0;
-        }
+/* Remove underline from the name if it’s a link */
+h1 a {
+    text-decoration: none; /* Ensure no underline for links within h1 */
+}
 
- a {
-            color: #4CAF50;
-            text-decoration: none;
-            font-weight: bold;
-        }
+p {
+    font-size: 1.2em;
+    margin: 15px 0;
+}
 
- a:hover {
-            text-decoration: underline;
-        }
+a {
+    color: #4CAF50;
+    text-decoration: none;
+    font-weight: bold;
+}
 
-        /* Button styling (adjusted to resemble the reference) */
- .btn {
-            display: inline-block;
-            padding: 12px 30px; /* Adjusted padding */
-            font-size: 1.1em;
-            background-color: #4CAF50;
-            color: white;
-            border: none;
-            border-radius: 3px; /* Reduced corner radius */
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
-            text-decoration: none;
-            cursor: pointer;
-            transition: background-color 0.3s ease, box-shadow 0.3s ease;
-        }
+a:hover {
+    text-decoration: underline;
+}
 
- .btn:hover {
-            background-color: #45a049;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); /* Darker shadow on hover */
-        }
+/* Button styling */
+.btn {
+    display: inline-block;
+    padding: 12px 30px; /* Adjusted padding */
+    font-size: 1.1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 3px; /* Reduced corner radius */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
 
-        /* Icon and buttons at the bottom */
- .bottom-buttons {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 20px;
-        }
+.btn:hover {
+    background-color: #45a049;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); /* Darker shadow on hover */
+}
 
-        /* Styling for the mail icon, now without background or padding */
- .icon img {
-            width: 40px;
-            height: 40px;
-            cursor: pointer;
+/* Icon and buttons at the bottom */
+.bottom-buttons {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 20px;
+}
+
+/* Styling for the mail icon */
+.icon img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
         }
     </style>
 </head>
