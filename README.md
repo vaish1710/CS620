@@ -45,7 +45,7 @@
 
         /* Style for the name */
         h1 {
-            font-size: 20em; /* Increase font size to 20em */
+            font-size: 30em; /* Increase font size to 20em */
             margin: 0;
             font-weight: bold;
             text-decoration: none; /* Ensure no underline */
@@ -60,6 +60,7 @@
             font-size: 1.2em;
             margin: 0; /* Remove margin to eliminate space between elements */
             text-decoration: none; /* Ensure no underline for paragraphs */
+            text-align: center;
         }
 
         a {
