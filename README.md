@@ -19,7 +19,7 @@
         }
 
         /* Center the content */
-        .container {
+ .container {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -30,7 +30,7 @@
         }
 
         /* Style for the portfolio content */
-        .portfolio {
+ .portfolio {
             padding: 20px;
             border-radius: 15px;
             background-color: rgba(0, 0, 0, 0); /* Removed shadow, kept a light background */
@@ -40,29 +40,29 @@
             transform: translate(-50%, -50%);
         }
 
-        h1 {
+h1 {
             font-size: 3.5em;
             margin: 0;
             font-weight: bold;
         }
 
-        p {
+ p {
             font-size: 1.2em;
             margin: 15px 0;
         }
 
-        a {
+ a {
             color: #4CAF50;
             text-decoration: none;
             font-weight: bold;
         }
 
-        a:hover {
+ a:hover {
             text-decoration: underline;
         }
 
         /* Button styling (adjusted to resemble the reference) */
-        .btn {
+ .btn {
             display: inline-block;
             padding: 12px 30px; /* Adjusted padding */
             font-size: 1.1em;
@@ -76,13 +76,13 @@
             transition: background-color 0.3s ease, box-shadow 0.3s ease;
         }
 
-        .btn:hover {
+ .btn:hover {
             background-color: #45a049;
             box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); /* Darker shadow on hover */
         }
 
         /* Icon and buttons at the bottom */
-        .bottom-buttons {
+ .bottom-buttons {
             position: absolute;
             bottom: 20px;
             left: 50%;
@@ -92,7 +92,7 @@
         }
 
         /* Styling for the mail icon, now without background or padding */
-        .icon img {
+ .icon img {
             width: 40px;
             height: 40px;
             cursor: pointer;
@@ -109,12 +109,12 @@
         </div>
 
         <!-- Align buttons and icon at the bottom -->
-        <div class="bottom-buttons">
+ <div class="bottom-buttons">
             <!-- Download Resume Button -->
             <a href="https://raw.githubusercontent.com/vaish1710/CS620/main/Resume.pdf" class="btn" download="Vaishnavi_Resume.pdf">Download Resume</a>
 
             <!-- Email Icon Button -->
-            <div class="icon">
+<div class="icon">
                 <a href="mailto:vaish.paruchuri@gmail.com?subject=Portfolio Inquiry">
                     <img src="https://cdn.pixabay.com/photo/2016/06/13/17/30/mail-1454733_640.png" alt="Email Icon" />
                 </a>
