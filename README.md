@@ -26,7 +26,7 @@
             align-items: center;
             height: 100vh;
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.6); /* Darken the background for readability */
+            background-color: rgba(0, 0, 0, 0); /* Darken the background for readability */
             position: relative;
         }
 
