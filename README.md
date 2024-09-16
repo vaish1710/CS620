@@ -28,7 +28,9 @@
             height: 100vh; /* Ensure container fills the viewport height */
             text-align: center;
             background-color: rgba(0, 0, 0, 0.6); /* Darken the background for readability */
-            position: relative;
+            position: absolute; /* Position absolute to ensure it sticks to the background */
+            top: 0; /* Align top edge */
+            left: 0; /* Align left edge */
             overflow: hidden; /* Prevents scrollbars */
         }
 
@@ -37,7 +39,7 @@
             padding: 20px;
             border-radius: 15px;
             background-color: rgba(0, 0, 0, 0); /* Transparent background */
-            position: relative; /* Changed to relative to ensure proper centering */
+            position: relative; /* Ensure proper centering */
             box-shadow: none !important; /* Force removal of box shadow */
             border: none; /* Ensure no border is applied */
         }
@@ -57,7 +59,7 @@
 
         p {
             font-size: 1.2em;
-            margin: 15px 0;
+            margin: 0; /* Remove margin to eliminate space between elements */
         }
 
         a {
