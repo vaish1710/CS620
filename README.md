@@ -26,7 +26,7 @@
             align-items: center;
             height: 100vh;
             text-align: center;
-            background-color: rgba(0, 0, 0, 0); /* Darken the background for readability */
+            background-color: rgba(0, 0, 0, 0.6); /* Darken the background for readability */
             position: relative;
         }
 
@@ -45,7 +45,7 @@
 
         /* Style for the name */
         h1 {
-            font-size: 4em; /* Increase font size */
+            font-size: 7em; /* Increase font size */
             margin: 0;
             font-weight: bold;
             text-decoration: none; /* Ensure no underline */
