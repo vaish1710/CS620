@@ -8,10 +8,10 @@
     <style>
         /* Apply a background image with an animated gradient overlay */
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Poppins', sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('"F:\sublime\1619644762_github-desktop_story.jpg"'); /* Background image from your GitHub */
+            background-image: url('https://raw.githubusercontent.com/vaish1710/CS620/main/102393310-07478b80-3f8d-11eb-84eb-392d555ebd29.webp'); /* Updated Background Image */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -20,8 +20,9 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            position: relative;
             overflow: hidden;
+            position: relative;
+            scroll-behavior: smooth; /* Smooth scroll for future sections */
         }
 
         /* Add a subtle animated gradient overlay */
@@ -35,7 +36,7 @@
             background: linear-gradient(135deg, rgba(0,0,0,0.7), rgba(0,0,0,0.4));
             background-size: 400% 400%;
             animation: gradientAnimation 15s ease infinite;
-            z-index: 1; /* Overlay is behind the content */
+            z-index: 1;
         }
 
         /* Gradient animation */
@@ -45,26 +46,38 @@
             100% { background-position: 0% 50%; }
         }
 
+        /* Glow effect for the title */
+        h1 {
+            font-size: 3em;
+            color: #4CAF50;
+            text-shadow: 0 0 15px #4CAF50, 0 0 25px #4CAF50, 0 0 40px #4CAF50;
+            margin: 0;
+        }
+
         /* Center the content */
         .container {
-            flex: 1; /* Pushes footer to the bottom */
+            flex: 1;
             display: flex;
             justify-content: center;
             align-items: center;
             text-align: center;
-            z-index: 2; /* Content stays on top */
+            z-index: 2;
         }
 
         /* Style for the portfolio content */
         .portfolio {
-            padding: 20px;
-            background: rgba(0, 0, 0, 0.5); /* Semi-transparent background for readability */
-            border-radius: 10px;
+            padding: 30px;
+            border-radius: 15px;
+            background: rgba(0, 0, 0, 0.5);
+            backdrop-filter: blur(5px); /* Blurs the background under the content */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
-        h1 {
-            font-size: 3em;
-            margin: 0;
+        /* Card hover effect */
+        .portfolio:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
         }
 
         p {
@@ -76,13 +89,28 @@
             color: #4CAF50;
             text-decoration: none;
             font-weight: bold;
+            position: relative;
         }
 
-        a:hover {
-            text-decoration: underline;
+        a::before {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #4CAF50;
+            visibility: hidden;
+            transform: scaleX(0);
+            transition: all 0.3s ease-in-out;
         }
 
-        /* Button styling */
+        a:hover::before {
+            visibility: visible;
+            transform: scaleX(1);
+        }
+
+        /* Button styling with hover effect */
         .btn {
             display: inline-block;
             padding: 10px 20px;
@@ -93,33 +121,54 @@
             border-radius: 5px;
             text-decoration: none;
             cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
         }
 
         .btn:hover {
             background-color: #45a049;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5);
         }
 
-        /* Icon and buttons at the footer */
+        /* Footer with flexbox */
         .footer {
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 20px;
             gap: 20px;
-            background-color: rgba(0, 0, 0, 0.7); /* Darken the footer for readability */
-            z-index: 2; /* Ensure it's above the animation */
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 2;
         }
 
         .icon img {
             width: 40px;
             height: 40px;
             cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        .icon img:hover {
+            transform: rotate(15deg);
+        }
+
+        /* Animations on scroll for the content */
+        .fade-in {
+            opacity: 0;
+            transform: translateY(50px);
+            transition: opacity 0.8s ease, transform 0.8s ease;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <div class="portfolio">
+        <div class="portfolio fade-in">
             <h1>Vaishnavi Paruchuri</h1>
             <p>Data Science and Analytics Master's Student</p>
             <p>I hold an undergraduate degree in Computer Science and am currently pursuing a master's in Data Science and Analytics. My primary interest lies in uncovering valuable outcomes from data, driving insights that lead to informed decisions and innovation.</p>
@@ -127,7 +176,7 @@
         </div>
     </div>
 
-    <!-- Align buttons and icon at the footer -->
+    <!-- Footer with buttons and email icon -->
     <div class="footer">
         <!-- Download Resume Button -->
         <a href="https://raw.githubusercontent.com/vaish1710/CS620/main/Resume.pdf" class="btn" download="Vaishnavi_Resume.pdf">Download Resume</a>
@@ -139,5 +188,13 @@
             </a>
         </div>
     </div>
+
+    <script>
+        /* JavaScript to handle the fade-in animation */
+        document.addEventListener("DOMContentLoaded", function() {
+            var portfolio = document.querySelector('.portfolio');
+            portfolio.classList.add('visible');
+        });
+    </script>
 </body>
 </html>
