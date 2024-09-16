@@ -51,9 +51,9 @@
             text-decoration: none; /* Ensure no underline */
         }
 
-        /* Remove underline from the name if it’s a link */
         h1 a {
             text-decoration: none; /* Ensure no underline for links within h1 */
+            color: inherit; /* Ensure links inherit the color from h1 */
         }
 
         p {
