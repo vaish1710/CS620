@@ -1,4 +1,3 @@
-
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -11,7 +10,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('https://raw.githubusercontent.com/vaish1710/CS620/main/102393310-07478b80-3f8d-11eb-84eb-392d555ebd29.webp'); /* Background image from your GitHub */
+            background-image: url('https://raw.githubusercontent.com/vaish1710/CS620/main/102393310-07478b80-3f8d-11eb-84eb-392d555ebd29.webp');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -34,6 +33,7 @@
         .portfolio {
             padding: 20px;
             border-radius: 15px;
+            background-color: rgba(0, 0, 0, 0); /* Removed shadow, kept a light background */
             position: absolute;
             top: 50%;
             left: 50%;
@@ -41,12 +41,14 @@
         }
 
         h1 {
-            font-size: 3em;
+            font-size: 3.5em;
             margin: 0;
+            font-weight: bold;
         }
 
         p {
             font-size: 1.2em;
+            margin: 15px 0;
         }
 
         a {
@@ -59,21 +61,24 @@
             text-decoration: underline;
         }
 
-        /* Button styling */
+        /* Button styling (adjusted to resemble the reference) */
         .btn {
             display: inline-block;
-            padding: 10px 20px;
+            padding: 12px 30px; /* Adjusted padding */
             font-size: 1.1em;
             background-color: #4CAF50;
             color: white;
             border: none;
-            border-radius: 5px;
+            border-radius: 3px; /* Reduced corner radius */
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
             text-decoration: none;
             cursor: pointer;
+            transition: background-color 0.3s ease, box-shadow 0.3s ease;
         }
 
         .btn:hover {
             background-color: #45a049;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); /* Darker shadow on hover */
         }
 
         /* Icon and buttons at the bottom */
@@ -86,6 +91,7 @@
             gap: 20px;
         }
 
+        /* Styling for the mail icon, now without background or padding */
         .icon img {
             width: 40px;
             height: 40px;
@@ -98,16 +104,14 @@
         <div class="portfolio">
             <h1>Vaishnavi Paruchuri</h1>
             <p>Data Science and Analytics Master's Student</p>
-            <p>I hold an undergraduate degree in Computer Science and am currently pursuing a master's in Data Science and Analytics. My primary interest lies in uncovering valuable outcomes from data, driving insights that lead to informed decisions and innovation. Welcome to my GitHub portfolio, where I showcase my work, projects, and collaborations.</p>
-            <!--<p>Welcome to my GitHub portfolio. Here you can find my projects, collaborations, and more!</p>-->
+            <p>I hold an undergraduate degree in Computer Science and am currently pursuing a master's in Data Science and Analytics. My primary interest lies in uncovering valuable outcomes from data, driving insights that lead to informed decisions and innovation.</p>
             <p>Check out my repositories on <a href="https://github.com/vaish1710" target="_blank">GitHub</a>.</p>
         </div>
 
         <!-- Align buttons and icon at the bottom -->
         <div class="bottom-buttons">
             <!-- Download Resume Button -->
-            <a href="https://raw.githubusercontent.com/vaish1710/CS620/main/Resume.pdf" class="btn" download="Vaishnavi_Resume.pdf">
-            Download Resume</a>
+            <a href="https://raw.githubusercontent.com/vaish1710/CS620/main/Resume.pdf" class="btn" download="Vaishnavi_Resume.pdf">Download Resume</a>
 
             <!-- Email Icon Button -->
             <div class="icon">
