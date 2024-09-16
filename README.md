@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -19,15 +19,17 @@
             color: white;
         }
 
-        /* Center the content */
+        /* Center the content and fill the entire page */
         .container {
             display: flex;
-            justify-content: fill;
+            justify-content: center;
             align-items: center;
-            height: 100vh;
+            width: 100vw; /* Ensure container fills the viewport width */
+            height: 100vh; /* Ensure container fills the viewport height */
             text-align: center;
-            background-color: rgba(0, 0, 0, 0.3); /* Darken the background for readability */
+            background-color: rgba(0, 0, 0, 0.6); /* Darken the background for readability */
             position: relative;
+            overflow: hidden; /* Prevents scrollbars */
         }
 
         /* Style for the portfolio content */
@@ -45,7 +47,7 @@
 
         /* Style for the name */
         h1 {
-            font-size: 7em; /* Increase font size */
+            font-size: 10em; /* Set font size to 10em */
             margin: 0;
             font-weight: bold;
             text-decoration: none; /* Ensure no underline */
