@@ -37,17 +37,14 @@
             padding: 20px;
             border-radius: 15px;
             background-color: rgba(0, 0, 0, 0); /* Transparent background */
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            position: relative; /* Changed to relative to ensure proper centering */
             box-shadow: none !important; /* Force removal of box shadow */
             border: none; /* Ensure no border is applied */
         }
 
         /* Style for the name */
         h1 {
-            font-size: 10em; /* Set font size to 10em */
+            font-size: 20em; /* Increase font size to 20em */
             margin: 0;
             font-weight: bold;
             text-decoration: none; /* Ensure no underline */
