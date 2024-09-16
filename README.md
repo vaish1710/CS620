@@ -60,16 +60,17 @@
         p {
             font-size: 1.2em;
             margin: 0; /* Remove margin to eliminate space between elements */
+            text-decoration: none; /* Ensure no underline for paragraphs */
         }
 
         a {
             color: #4CAF50;
-            text-decoration: none;
+            text-decoration: none; /* Ensure no underline for links */
             font-weight: bold;
         }
 
         a:hover {
-            text-decoration: underline;
+            text-decoration: underline; /* Underline only on hover */
         }
 
         /* Button styling */
