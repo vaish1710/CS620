@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -48,12 +49,18 @@
             font-size: 20em; /* Increase font size to 20em */
             margin: 0;
             font-weight: bold;
-            text-decoration: none; /* Ensure no underline */
+            text-decoration: none !important; /* Ensure no underline */
         }
 
+        /* Ensure no underline for links within h1 */
         h1 a {
-            text-decoration: none; /* Ensure no underline for links within h1 */
+            text-decoration: none !important; /* Ensure no underline for links within h1 */
             color: inherit; /* Ensure links inherit the color from h1 */
+        }
+
+        /* Debugging styles to check underline */
+        h1, h1 a {
+            border: 1px solid red; /* Add border to visually inspect element boundaries */
         }
 
         p {
