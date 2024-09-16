@@ -15,15 +15,15 @@
             background-size: cover; /* Make sure image covers the entire viewport */
             background-position: center;
             background-repeat: no-repeat;
-            height: 100vh;
+            min-height: 100vh;
             color: white;
             display: flex;
             flex-direction: column;
-            justify-content: space-between;
         }
 
         /* Center the content */
         .container {
+            flex: 1; /* Pushes footer to the bottom */
             display: flex;
             justify-content: center;
             align-items: center;
