@@ -11,7 +11,7 @@
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            background-image: url('https://raw.githubusercontent.com/vaish1710/CS620/main/102393310-07478b80-3f8d-11eb-84eb-392d555ebd29.webp'); /* Background image from your GitHub */
+            background-image: url('"F:\sublime\1619644762_github-desktop_story.jpg"'); /* Background image from your GitHub */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
