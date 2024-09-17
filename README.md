@@ -192,7 +192,7 @@
             </p>
             <p>Data Science and Analytics Master's Student</p>
             <p>I hold an undergraduate degree in Computer Science and am currently pursuing a master's in Data Science and Analytics. My primary interest lies in uncovering valuable outcomes from data, driving insights that lead to informed decisions and innovation.</p>
-            <p>Check out my repositories on <a href="https://github.com/vaish1710" target="_blank">GitHub</a>.</p>
+            <p style  color: white>Check out my repositories on <a href="https://github.com/vaish1710" target="_blank">GitHub</a>.</p>
         </div>
 
         <!-- Buttons -->
