@@ -107,15 +107,6 @@
         }
 
         /* Email Icon Styling */
-        .icon {
-            background-color: #007BFF; /* Blue background color */
-            padding: 10px; /* Padding around the icon */
-            border-radius: 50%; /* Makes the background circular */
-            display: inline-flex; /* Align items in the center */
-            justify-content: center;
-            align-items: center;
-        }
-
         .icon img {
             width: 40px;
             height: 40px;
