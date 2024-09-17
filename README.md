@@ -46,9 +46,9 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 30px;
+            padding: 20px;
             box-sizing: border-box;
-            border-radius: 25px;
+            border-radius: 15px;
             max-width: 90%; /* Prevent overflow on small screens */
             margin: auto; /* Center the container */
         }
@@ -73,7 +73,7 @@
             margin: 15px 0;
             color: black;
             background-color: transparent;
-            padding: 5px;
+            padding: 10px;
             border-radius: 5px;
             max-width: 100%;
             text-align: center;
