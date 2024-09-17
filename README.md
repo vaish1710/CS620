@@ -46,7 +46,7 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            padding: 20px;
+            padding: 30px;
             box-sizing: border-box;
             border-radius: 15px;
             max-width: 90%; /* Prevent overflow on small screens */
