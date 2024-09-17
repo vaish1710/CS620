@@ -48,7 +48,7 @@
             align-items: center;
             padding: 30px;
             box-sizing: border-box;
-            border-radius: 15px;
+            border-radius: 25px;
             max-width: 90%; /* Prevent overflow on small screens */
             margin: auto; /* Center the container */
         }
