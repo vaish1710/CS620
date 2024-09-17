@@ -73,7 +73,7 @@
             margin: 15px 0;
             color: black;
             background-color: transparent;
-            padding: 10px;
+            padding: 5px;
             border-radius: 5px;
             max-width: 100%;
             text-align: center;
