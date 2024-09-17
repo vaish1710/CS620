@@ -1,3 +1,4 @@
+
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -5,84 +6,100 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>My GitHub Portfolio</title>
     <style>
-        /* Apply a background image */
-        body {
-            font-family: Arial, sans-serif;
+        /* Ensure the body and html cover full viewport height */
+        html, body {
+            height: 100%;
             margin: 0;
             padding: 0;
-            background-image: url('https://raw.githubusercontent.com/vaish1710/CS620/main/102393310-07478b80-3f8d-11eb-84eb-392d555ebd29.webp');
-            background-size: cover; /* Ensures the image covers the entire viewport */
+        }
+
+        /* Apply a space-themed background for the entire page */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #000; /* Fallback color */
+            background-image: url('https://blenderartists.org/uploads/default/original/4X/7/e/2/7e2d7bea4ac21388c4a96e1371f375c4ce00094b.jpg'); /* Space background image */
+            background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            height: 100vh; /* Ensures the body takes the full viewport height */
-            color: white;
+            background-attachment: fixed; /* Keeps the background fixed */
+            color: white; /* Adjust text color for better contrast */
+            overflow-x: hidden;
+            box-sizing: border-box;
         }
 
-        /* Center the content and fill the entire page */
-        .container {
+        /* Background image container */
+        .background-image {
+            height: 70vh; /* Top 70% of the viewport height */
+            background-image: url('https://raw.githubusercontent.com/vaish1710/CS620/main/102393310-07478b80-3f8d-11eb-84eb-392d555ebd29.webp');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            position: relative;
+            width: 100%;
+        }
+
+        /* Content container for the white section */
+        .content-container {
+            height: 30vh; /* Bottom 30% of the viewport height */
+            background-color: rgba(255, 255, 255, 0.8); /* Slightly transparent white */
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
-            width: 100vw; /* Ensure container fills the viewport width */
-            height: 100vh; /* Ensure container fills the viewport height */
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.6); /* Darken the background for readability */
-            position: absolute; /* Position absolute to ensure it sticks to the background */
-            top: 0; /* Align top edge */
-            left: 0; /* Align left edge */
-            overflow: hidden; /* Prevents scrollbars */
+            padding: 20px;
+            box-sizing: border-box;
+            border-radius: 15px;
+            max-width: 90%; /* Prevent overflow on small screens */
+            margin: auto; /* Center the container */
         }
 
-        /* Style for the portfolio content */
-        .portfolio {
-            padding: 20px;
-            border-radius: 15px;
-            background-color: rgba(0, 0, 0, 0); /* Transparent background */
-            position: relative; /* Ensure proper centering */
-            box-shadow: none !important; /* Force removal of box shadow */
-            border: none; /* Ensure no border is applied */
-        }
+       
 
         /* Style for the name */
         h1 {
-            font-size: 30em; /* Increase font size to 20em */
+            font-size: 3em; /* Adjusted to a reasonable size */
             margin: 0;
             font-weight: bold;
-            text-decoration: none; /* Ensure no underline */
+            text-decoration: none;
+            text-align: center;
         }
 
         h1 a {
-            text-decoration: none; /* Ensure no underline for links within h1 */
-            color: inherit; /* Ensure links inherit the color from h1 */
+            text-decoration: none;
+            color: inherit;
         }
 
+        /* Paragraph styling */
         p {
-            font-size: 1.2em;
-            margin: 0; /* Remove margin to eliminate space between elements */
-            text-decoration: none; /* Ensure no underline for paragraphs */
+            font-size: 1.1em;
+            margin: 15px 0;
+            color: black;
+            background-color: transparent;
+            padding: 10px;
+            border-radius: 5px;
+            max-width: 100%;
             text-align: center;
         }
 
         a {
             color: #4CAF50;
-            text-decoration: none; /* Ensure no underline for links */
+            text-decoration: none;
             font-weight: bold;
         }
 
         a:hover {
-            text-decoration: underline; /* Underline only on hover */
+            text-decoration: underline;
         }
 
         /* Button styling */
         .btn {
             display: inline-block;
-            padding: 12px 30px; /* Adjusted padding */
+            padding: 12px 30px;
             font-size: 1.1em;
             background-color: #4CAF50;
             color: white;
             border: none;
-            border-radius: 3px; /* Reduced corner radius */
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+            border-radius: 3px;
             text-decoration: none;
             cursor: pointer;
             transition: background-color 0.3s ease, box-shadow 0.3s ease;
@@ -90,29 +107,85 @@
 
         .btn:hover {
             background-color: #45a049;
-            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4); /* Darker shadow on hover */
         }
 
-        /* Icon and buttons at the bottom */
-        .bottom-buttons {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            display: flex;
-            gap: 20px;
-        }
-
-        /* Styling for the mail icon */
+        /* Email Icon Styling */
         .icon img {
             width: 40px;
             height: 40px;
             cursor: pointer;
         }
+
+        /* Fixed bottom space styling */
+        .bottom-space {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 20px;
+        }
+
+        /* Copyright Styling */
+        .copyright {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            color: white; /* Ensure visibility on dark background */
+            font-size: 0.8em; /* Slightly smaller for better fit */
+            background-color: rgba(0, 0, 0, 0.7); /* Darker background for copyright */
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 2.5em;
+            }
+
+            p {
+                font-size: 1em;
+            }
+
+            .btn {
+                font-size: 1em;
+                padding: 10px 20px;
+            }
+
+            .content-container {
+                height: auto;
+                margin: 10px;
+                padding: 10px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2em;
+            }
+
+            p {
+                font-size: 0.9em;
+            }
+
+            .btn {
+                font-size: 0.9em;
+                padding: 8px 15px;
+            }
+
+            .icon img {
+                width: 35px;
+                height: 35px;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <!-- Background Image Section -->
+    <div class="background-image"></div>
+
+    <!-- White Background Content Section -->
+    <div class="content-container">
+        <!-- Portfolio Content -->
         <div class="portfolio">
             <h1>Vaishnavi Paruchuri</h1>
             <p>Data Science and Analytics Master's Student</p>
@@ -120,18 +193,23 @@
             <p>Check out my repositories on <a href="https://github.com/vaish1710" target="_blank">GitHub</a>.</p>
         </div>
 
-        <!-- Align buttons and icon at the bottom -->
-        <div class="bottom-buttons">
+        <!-- Buttons -->
+        <div class="bottom-space">
             <!-- Download Resume Button -->
             <a href="https://raw.githubusercontent.com/vaish1710/CS620/main/Resume.pdf" class="btn" download="Vaishnavi_Resume.pdf">Download Resume</a>
 
             <!-- Email Icon Button -->
             <div class="icon">
                 <a href="mailto:vaish.paruchuri@gmail.com?subject=Portfolio Inquiry">
-                    <img src="https://cdn.pixabay.com/photo/2016/06/13/17/30/mail-1454733_640.png" alt="Email Icon" />
+                    <img src="https://cdn.pixabay.com/photo/2016/06/13/17/30/mail-1454733_640.png" alt="Email Icon">
                 </a>
             </div>
         </div>
+    </div>
+
+    <!-- Copyright Text -->
+    <div class="copyright">
+        &copy; Vaishnavi Paruchuri
     </div>
 </body>
 </html>
