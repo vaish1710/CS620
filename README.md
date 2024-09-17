@@ -1,4 +1,4 @@
-
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -52,8 +52,6 @@
             max-width: 90%; /* Prevent overflow on small screens */
             margin: auto; /* Center the container */
         }
-
-       
 
         /* Style for the name */
         h1 {
@@ -119,8 +117,9 @@
         /* Fixed bottom space styling */
         .bottom-space {
             display: flex;
-            flex-direction: column;
-            align-items: center;
+            flex-direction: row; /* Align items in a row */
+            gap: 20px; /* Space between buttons */
+            align-items: center; /* Center items vertically */
             margin-top: 20px;
         }
 
@@ -189,9 +188,8 @@
         <div class="portfolio">
             <h1>Vaishnavi Paruchuri</h1>
             <p style="text-align: center; font-size: larger; font-style: italic;">
-  Masters in Data Science and Analytics
-</p><
-
+                Masters in Data Science and Analytics
+            </p>
             <p>Data Science and Analytics Master's Student</p>
             <p>I hold an undergraduate degree in Computer Science and am currently pursuing a master's in Data Science and Analytics. My primary interest lies in uncovering valuable outcomes from data, driving insights that lead to informed decisions and innovation.</p>
             <p>Check out my repositories on <a href="https://github.com/vaish1710" target="_blank">GitHub</a>.</p>
